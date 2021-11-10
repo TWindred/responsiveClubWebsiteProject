@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(222, 241, 133);
+}
+
+header {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    }
+
+header #logo {
+    width: 10em;
+    height: 5em;
+    border-radius: 25%;
+}
+
+header #pagetitle {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    left: 2.5em;
+}
+
+header #navlist {
+    list-style-type: none;
+}
+
+header #navlist li {
+    display: inline;
+}
+
+a {
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a:link {
+    color:coral;
+}
+
+a:hover {
+    color: rgb(255, 208, 53);
+}
+
+a:active {
+    color: yellow;
+}
+
+a:visited {
+    color: rgb(133, 80, 0);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+main .title {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.418);
+    width: 5em;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+main #about {
+    background-image: url("./media/aboutBackground.jfif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 49%;
+    min-height: 20em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    padding-top: 1em;
+}
+
+main #aboutcontent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.418);
+}
+
+main #events {
+    background-image: url("./media/tournamentImage.jfif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 49%;
+    min-height: 20em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    padding-top: 1em;
+}
+
+main #events .subtitle {
+    color: white;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.418);
+}
+
+main #events #eventcontent p {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0.418);
+    text-align: center;
+}
+
+main #location {
+    background-image: url("./media/chessboardBackground.jfif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 49%;
+    min-height: 20em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+}
+
+main #location #locationcontent {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0.418);
+    text-align: center;
+}
+
+main #contact {
+    background-image: url("./media/siteBackground.jfif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 49%;
+    min-height: 20em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+}
+
+main #contact #contactcontent {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0.418);
+    text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    header #pagetitle {
+        order: 3;
+    }
+    
+    header #headernav {
+        order: 2;
+    }
+
+    main {
+        flex-direction: column;
+    }
+}
